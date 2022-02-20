@@ -1,0 +1,109 @@
+body{
+ background-color: rgba(0,0,0,0.8);
+}
+img {
+ height: auto;
+ max-width: 100%;
+}
+.content1{
+ margin-top: 50px;
+}
+.list-group
+{
+	float: left;
+	height: 1250px;
+	margin: 40px;
+}
+.product {
+ background: #fff;
+ border: 1px solid #c0c0c0;
+ height: 560px;
+ overflow: hidden;
+ padding: 80px 75px;
+ position: relative;
+ text-align: center;
+ transition: all 0.5s ease 0s;
+ margin-bottom: 20px;
+ font-family: sans-serif;
+}
+.product:hover {
+ box-shadow: 0 0 16px white;
+}
+.product-img {
+ height: 200px;
+}
+.product-title a {
+ color: #000;
+ font-weight: 500;
+ text-transform: uppercase;
+ font-family: sans-serif;
+}
+.product-desc {
+ max-height: 150px;
+ overflow: hidden;
+ max-width: 210px;
+ font-family: sans-serif;
+}
+.product-price {
+ bottom: 15px;
+ left: 0px;
+ position: absolute;
+ width: 100%;
+ color: #d51e08;
+ font-size: 18px;
+ font-weight: 500;
+ font-family: sans-serif;
+}
+.menu1 li
+{
+	font-size: 20px;
+	list-style: none;
+	font-family: sans-serif;
+}
+.menu1 li a
+{
+	text-decoration: none;
+	color: #bfbfbf;
+	line-height: 40px;
+}
+.menu1
+{
+	padding: 10px 100px;
+	transition: all 0.5s ease 0s;
+}
+.rectangle {
+counter-reset: li;
+list-style: none;
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rectangle a {
+position: relative;
+display: block;
+padding: 10px 100px;
+margin: 4px 10px 4px;
+background: #D3D4DA;
+color: #444;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+.rectangle a:hover {background: #DCDDE1;}
+.rectangle a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #9097A2;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+.rectangle a:hover:after {
+left: -.5em;
+border-left-color: #9097A2;
+}
